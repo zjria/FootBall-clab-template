@@ -100,7 +100,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 10px auto;
-    position: relative;
+
 
 }
 
@@ -111,6 +111,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
 }
 
 .clabe-img img {
@@ -119,13 +120,54 @@ body {
     border-radius: 40%;
 }
 
-.images {
+.img1 {
     opacity: 1;
     display: block;
     width: 100%;
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
+    width: 330px;
+    height: 474px;
+}
+
+.move {
+    width: 330px;
+    height: 474px;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.move {
+    color: white;
+}
+
+.move i {
+    font-size: 45px;
+    padding: 10px 5px;
+}
+
+.move h2 {
+    font-size: 30px;
+    color: darkolivegreen;
+    background-color: darksalmon;
+    border-radius: 2px solid green;
+    margin: 0px 20px;
+
+}
+
+.images-text:hover .img1 {
+    opacity: 0.5;
+}
+
+.images-text:hover .move {
+    opacity: 1;
 }
 
 /* clabe infromation End */
