@@ -284,7 +284,6 @@ p {
     width: 32px;
     height: 32px;
     padding: 7px;
-
 }
 
 .socail-icon ul li a {
@@ -299,7 +298,6 @@ p {
     margin: auto;
     justify-content: center;
     align-items: center;
-    /* margin: auto; */
     top: 50%;
     bottom: 50%;
     padding: 8px;
@@ -315,7 +313,81 @@ p {
 /* footer section End */
 
 
+
+/* Responsive Website Degain Labtop  */
+
+@media screen and (max-width: 992px) {
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        background-color: #2d25a0;
+        margin-bottom: 70px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header-text {
+        width: 274px;
+        height: 200px;
+        margin-left: 16px;
+        margin-top: 112px;
+        margin-right: 70px;
+    }
+
+    .header-text h1 {
+        color: #fff;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 50px;
+        margin-bottom: 27px;
+        width: 274px;
+        height: 200px;
+    }
+
+    .live-vedio {
+        margin-bottom: 50px;
+    }
+
+    .header-banner {
+        margin-top: 0px;
+        margin-right: 16px;
+        margin-bottom: 61.81px;
+        margin-left: 15px;
+        width: 329px;
+        height: 259px;
+        padding-bottom: 160px;
+    }
+
+    .player-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+    }
+
+    .player-info .player {
+        width: 330px;
+        height: 474px;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        margin-bottom: 27px;
+    }
+
+    .clabe-info {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px auto;
+        padding-left: 230px;
+    }
+
+}
+
 /* Responsive Website Degain Mobile  */
+
 @media screen and (max-width:688px) {
     .container {
         display: flex;
@@ -359,7 +431,6 @@ p {
     }
 
     .player-info {
-        /* width: 1050px; */
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin: auto;
