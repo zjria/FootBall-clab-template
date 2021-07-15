@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins',
         sans-serif;
@@ -26,8 +30,10 @@ body {
     font-size: 64px;
     line-height: 80px;
     margin-bottom: 27px;
-
+    width: 485px;
+    height: 230px;
 }
+
 
 .header-text .live-vedio {
     width: 168px;
@@ -49,17 +55,43 @@ body {
 
 }
 
+/* images animation Sratr */
+.header-banner .header-images {
+    animation: 5s infinite running;
+    animation-name: slidein;
+
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: 10%;
+        width: 0%;
+    }
+
+    100% {
+        margin-left: 65%;
+        width: 55%;
+    }
+}
+
 .header-banner {
     margin-top: 135px;
     margin-right: 147px;
 }
 
 .header-banner img {
-    width: 556.01px;
+    width: 556px;
     height: 434px;
 }
 
+/* images animation End */
+
+
 /* header section End */
+
+
+
+
 
 /* main section start */
 
@@ -172,4 +204,114 @@ body {
 
 /* clabe infromation End */
 
+
+/* email section start */
+.email-text {
+    text-align: center;
+}
+
+.email-text h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: indianred;
+    margin: 0;
+}
+
+.email-text p {
+    font-size: 20px;
+    font-weight: 700;
+    color: olivedrab;
+}
+
+.email-text input {
+    font-size: 15px;
+    font-weight: 700;
+    height: 50px;
+    width: 500px;
+}
+
+.email-text button {
+    font-size: 20px;
+    font-weight: 700;
+    height: 55px;
+    padding: 0 20px;
+    background-color: greenyellow;
+}
+
+/* email section End */
 /* main section End */
+
+
+/* footer section start */
+.footer-section {
+    text-align: center;
+}
+
+.footer-logo img {
+    margin: 40px 0 20px 0;
+    width: 483.87px;
+    height: 110px;
+}
+
+.footer-logo .socail-icon {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.socail-icon ul {
+    display: inline-flex;
+}
+
+.socail-icon ul li {
+    list-style: none;
+    margin-right: 14px;
+
+}
+
+.socail-icon ul li i {
+    text-decoration: none;
+    background: #0B0D17;
+    opacity: 0.2;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #969BAB;
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+
+}
+
+.socail-icon ul li a {
+    color: white;
+    font-size: 26px;
+    width: 20px;
+    height: 10px;
+    margin: auto;
+}
+
+.socail-icon ul li a i {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    top: 50%;
+    bottom: 50%;
+    padding: 7px;
+}
+
+.copy-right {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* footer section End */
+
+/* Responsive Website Degain  */
+
+@media screen and (max-width: 688px) {
+    body {
+        background-color: royalblue;
+    }
+}
